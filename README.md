@@ -1,30 +1,14 @@
-# React + TypeScript + Vite
+### Digitalna Dalmacija JUNIORDev React 2024
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Praktični rad 3
 
-Currently, two official plugins are available:
+## Zadatak
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Napravite formu za unos kao na slici i pri tome iskoristiti što više do sada naučenih koncepata. Pokušajte implementirati navedene funkcionalnosti:
 
-## Expanding the ESLint configuration
+- Polja za unos bi trebala biti implementirana za kontrolirani elementi i po mogućnosti zasebne komponente
+- Prilikom promjene vrijednosti unosa implementirajte automatsku validaciju - mail mora sadržavati znak "@", ime i adresa moraju biti određene duljine itd...
+- Ako korisnik pritisne tipku "Naruči" a nije prihvatio uvjete, ispišite mu poruku (alert) sa upozorenjem.
+- Nakon uspješne narudžbe, ispod forme za unos prikažite novi okvir sa sažetkom svih podataka. Pokušajte iskoristi posebnu komponentu za prikaz sažetka te mogućnost uvjetnog renderiranja.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-};
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+![Primjer rješenja](https://github.com/anamarijapapic/JUNIORDev-React-03-OrderForm/assets/92815435/d806e213-b236-4b99-8948-bbf49f349b2f)
